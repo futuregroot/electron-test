@@ -63,10 +63,10 @@ function App() {
   const filteredFiles = files.filter(s => s.name.startsWith(searchString))
   return (
     <div className="container mt-2">
-      <h4>{path}</h4>
+      <h4>{path} 안녕하세요.</h4>
 
       <video controls>
-        <source src={require('./500videos.mp4').default} type="video/mp4"></source>
+        <source src={require('./assets/500videos.mp4').default} type="video/mp4"></source>
       </video>
       <div className="row">
       {isDownloading?"downloading":""}
@@ -76,7 +76,7 @@ function App() {
           className="form-control form-control-sm flex-1"
           placeholder="video url"
         />
-        <button className="btn btn-primary" onClick={(e)=>getFile(videoUrl, pathModule.resolve(path, "src/500videos.mp4"), ()=>{setVideoUrl(""); setIsDownloading(false)})}>go</button>
+        <button className="btn btn-primary" onClick={(e)=>getFile(videoUrl, pathModule.resolve(path, "src/assets/500videos.mp4"), ()=>{setVideoUrl(""); setIsDownloading(false)})}>go</button>
       </div>
 
       <div className="form-group mt-4 mb-2">

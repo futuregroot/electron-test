@@ -5,8 +5,7 @@ const isDev = require('electron-is-dev')
 
 require('@electron/remote/main').initialize()
 require('update-electron-app')({
-  repo: 'github-user/repo',
-  updateInterval: '1 hour',
+  repo: 'futuregroot/electron-test',
   logger: require('electron-log')
 })
 

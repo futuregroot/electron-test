@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^5.0.0-beta1",
     "electron-is-dev": "^1.2.0",
+    "electron-log": "^4.4.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
@@ -33,10 +34,14 @@
       "dist/**/*",
       "build/**/*",
       "node_modules/**/*",
-      "package.json"
+      "package.json",
+      "!.vscode${/*}"
     ],
     "directories": {
       "buildResources": "assets"
+    },
+    "mac":{
+      "target":  "zip"
     }
   },
   "eslintConfig": {
